@@ -11,10 +11,10 @@ const CompB: React.FC = () => {
     setTodo((oldTodo) => {
       return {
         ...oldTodo,
-        value2: todo.value2 + 1,
+        value2: oldTodo.value2 + 1,
       };
     });
-  }, [setTodo, todo]);
+  }, [setTodo]);
 
   console.log('PASSOU NO compB');
   return (

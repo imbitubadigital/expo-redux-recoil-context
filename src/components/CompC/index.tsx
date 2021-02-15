@@ -12,7 +12,7 @@ const CompC: React.FC = () => {
   console.log('PASSOU NO compC');
   return (
     <S.Container>
-      <S.Title>Hook A</S.Title>
+      <S.Title>Hook C</S.Title>
       <ButtonLabel onPress={Increment} value={todo.value1} />
     </S.Container>
   );

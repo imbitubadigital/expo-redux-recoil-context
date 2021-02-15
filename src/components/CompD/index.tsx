@@ -11,7 +11,7 @@ const CompD: React.FC = () => {
   console.log('PASSOU NO compD');
   return (
     <S.Container>
-      <S.Title>Hook B</S.Title>
+      <S.Title>Hook D</S.Title>
       <ButtonLabel onPress={Increment} value={todo.value2} />
     </S.Container>
   );

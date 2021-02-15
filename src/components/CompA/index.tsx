@@ -12,10 +12,10 @@ const CompA: React.FC = () => {
     setTodo((oldTodo) => {
       return {
         ...oldTodo,
-        value1: todo.value1 + 1,
+        value1: oldTodo.value1 + 1,
       };
     });
-  }, [setTodo, todo]);
+  }, [setTodo]);
 
   console.log('PASSOU NO compA');
 
