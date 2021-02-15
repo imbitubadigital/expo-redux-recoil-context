@@ -8,14 +8,14 @@ const CompC: React.FC = () => {
   const {todo, settingIncrement} = useTodo();
   const Increment = useCallback(() => {
     settingIncrement(1);
-  }, []);
+  }, [settingIncrement]);
   console.log('PASSOU NO compC');
   return (
     <S.Container>
       <S.Title>Hook A</S.Title>
-      <ButtonLabel onPress={Increment} value={todo.value1}/>
+      <ButtonLabel onPress={Increment} value={todo.value1} />
     </S.Container>
   );
-}
+};
 
 export default CompC;
